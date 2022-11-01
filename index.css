@@ -1,0 +1,304 @@
+/* Reset User Agent Stylesheet
+--------------------------------------*/
+* { 
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    padding: 0;
+    padding-block: 0;
+    padding-inline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Typography
+--------------------------------------*/
+html {
+    font-family: Helvetica, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: rgb(67, 53, 43);
+}
+h1 {
+    font-family: Tangerine, 'Times New Roman', Times, serif;
+    font-size: 6.5vw;
+    text-shadow: .15rem .15rem .15rem rgb(5, 5, 5);
+    background-color: rgba(60, 69, 72, 0.3);
+    padding: 2rem 4rem;
+}
+h2 {
+    font-family: Tangerine, 'Times New Roman', Times, serif;
+    font-size: 3.25rem;
+    color: rgb(255,165,0);
+    line-height: 2.25;
+    text-align: center;
+}
+h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: rgb(67, 53, 43);
+}
+p,
+figcaption {
+    color: rgb(67, 53, 43);
+    font-size: 1.3rem;
+ }
+ a {
+    color: white;
+    font-size: 1.15rem;
+    letter-spacing: 0.02rem;
+ }
+ #logo_txt_header,
+ #logo_txt_footer {
+    font-family: Tangerine, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: rgb(255,165,0);
+    line-height: 1;
+}
+#mission_statement {
+    width: 90%;
+    font-size: 1.6rem;
+    text-align: center;
+}
+#email {
+    font-weight: lighter;
+}
+#email:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Universal Elements
+--------------------------------------*/
+a.anchor {
+    position: relative;
+    bottom: 5.45rem;
+    visibility: hidden;
+}
+.bg_light {
+    background-color: hsl(30, 41%, 92%);
+}
+.flex {
+    display: flex;
+}
+
+/* Header
+--------------------------------------*/
+header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.5rem;
+    width: 100%;
+    padding: 0 2vw;
+    position: fixed;
+    top: 0;
+    background-color: rgb(67, 53, 43);
+    opacity: 90%;
+    z-index: 1;
+}
+#logo_mobile {
+    display: none;
+}
+nav a {
+    margin-left: 3vw;
+}
+nav a:hover {
+    color: rgb(255,165,0);
+    text-decoration: underline;
+}
+#nav_mobile {
+    display: none;
+}
+
+/* Main                 
+--------------------------------------*/
+main {
+    padding-top: 5.5rem;
+}
+
+/* Welcome
+--------------------------------------*/
+#strip_welcome {    
+    height: 50vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./resources/img-welcome-background.jpeg");
+    background-size:cover;
+}
+
+/* Mission
+--------------------------------------*/
+#strip_mission {
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 0 3.5em;
+}
+#icon_teacup {
+    height: 10rem;
+    margin-bottom: 2em;
+}
+
+/* Menu
+--------------------------------------*/
+.strip_menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4rem 0 3rem;
+}
+figure {
+    width: 30%;
+    text-align: center;
+}
+.menu_img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* Locations
+--------------------------------------*/
+#strip_locations {
+    padding: 4rem 0;
+    justify-content: space-evenly;
+    background-image: url("./resources/img-locations-background.jpeg");
+    background-size: cover;
+}
+.location_txt {
+    width: 30%;
+    background-color: hsla(30, 41%, 92%,0.7);
+    border-radius: 1rem;
+    padding: 2rem 0 3.5rem;
+    text-align: center;
+}
+
+/* Footer
+--------------------------------------*/
+footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 1.5rem 1.5rem;
+    align-items: center;
+}
+#copyright {
+    align-self: flex-end;
+    font-weight: lighter;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    /* Header | Tablet
+    --------------------------------------*/
+    #logo_txt_header {
+        display: none;
+    }
+    #logo_mobile {
+        display: flex;
+        height: 2rem;
+        margin-left: 1vw;
+    }
+    #nav_main {
+        display: none;
+    }
+    #nav_mobile {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-between;
+    }
+    #nav_mobile a {
+        margin: 0;
+        padding-top: 0.4rem;
+    }
+    #nav_mobile img {
+        height: 2.25rem;
+    }
+
+    /* Typography | Tablet
+    --------------------------------------*/
+    h2 {
+        font-size: 2.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p,
+    figcaption {
+        font-size: 1.25rem;
+    }
+    #mission_statement {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+
+    /* Typography | Mobile
+    --------------------------------------*/
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p,
+    figcaption {
+        font-size: 1.15rem;
+    }
+    #mission_statement {
+        font-size: 1.25rem;
+    }
+
+    /* Universal Elements | Mobile
+    --------------------------------------*/
+    .bg_light {
+        flex-direction: column;
+    }
+
+    /* Welcome | Mobile
+    --------------------------------------*/
+    #welcome {
+        display: none;
+    }
+
+    /* Mission | Mobile
+    --------------------------------------*/
+    #strip_mission {
+        padding: 1.5rem 0 2rem;
+    }
+    #icon_teacup {
+        height: 8rem;
+        margin-bottom: 2em;
+    }
+
+    /* Menu | Mobile
+    --------------------------------------*/
+    .strip_menu {
+        align-items: center;
+        padding: 1rem;
+    }
+    figure {
+        width: 95%;
+        padding: 1rem 0;
+    }
+
+    /* Locations | Mobile
+    --------------------------------------*/
+    #strip_locations {
+        align-items: center;
+        padding: 1rem 0;
+    }
+    .location_txt {
+        width: 80%;
+        margin: 1rem 0;
+        padding: 1.5rem 0 1.85rem;
+    }
+
+    /* Footer | Mobile
+    --------------------------------------*/
+    #copyright {
+        align-self: center;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Cozy Teahouse</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <link rel="icon" type="image/x-icon" href="./resources/logo.svg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+        <link href="./index.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header class="flex">
+            <a href="index.html" id="logo_txt_header">The Cozy Teahouse</a>
+            <img src="./resources/logo_orange.png" id="logo_mobile">
+            <nav id="nav_main">
+                <a href="#anchor_mission">Mission</a>
+                <a href="#anchor_feature">Featured Tea</a>
+                <a href="#anchor_bakery">Bakery</a>
+                <a href="#anchor_locations">Locations</a>
+            </nav>
+            <nav id="nav_mobile">
+            <a href="#anchor_mission"><img src="./resources/icon_mission.png" alt="Mission"></a>
+            <a href="#anchor_feature"><img src="./resources/icon_feature.png" alt="Feature Teas"></a>
+            <a href="#anchor_bakery"><img src="./resources/icon_bakery.png" alt="Bakery"></a>
+            <a href="#anchor_locations"><img src="./resources/icon_location.png" alt="Location"></a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="flex" id="strip_welcome">
+                <h1><span id="welcome">Welcome to </span>The Cozy Teahouse</h1>
+            </div>
+
+            <a class="anchor" id="anchor_mission"></a>
+            <h2>Our Mission</h2>
+            <div class="flex bg_light" id="strip_mission">
+                <img src="./resources/icon_teacup.png" alt="Teacup Icon" id="icon_teacup">
+                <p id="mission_statement">To offer artisanally sourced, high quality, sustainably grown, fair trade, organic tea.</p>
+            </div>
+
+            <a class="anchor" id="anchor_feature"></a>
+            <h2>Tea of the Month</h2>
+            <div class="flex bg_light strip_menu">
+                <figure>
+                    <img src="./resources/img-apple-autumn.jpeg" alt="Apple Autumn Tea" class="menu_img">
+                    <figcaption>Apple Autumn Tea</figcaption>
+                </figure>
+                <figure>
+                    <img src="./resources/img-berrybliss.jpeg" alt="Berry Bliss Tea" class="menu_img">
+                    <figcaption>Berry Bliss Tea</figcaption>
+                </figure>
+                <figure>
+                    <img src="./resources/img-spiced-rum.jpeg" alt="Spiced Rum Tea" class="menu_img">
+                    <figcaption>Spiced Rum Tea</figcaption>
+                </figure>
+            </div>
+
+            <a class="anchor" id="anchor_bakery"></a>
+            <h2>Bakery</h2>
+            <div class="flex bg_light strip_menu">
+                <figure>
+                    <img src="./resources/img-artisanal-pastries.jpeg" alt="Artisanal Pastries" class="menu_img">
+                    <figcaption>Artisanal Pastries</figcaption>
+                </figure>
+                <figure>
+                    <img src="./resources/img-seasonal-donuts.jpeg" alt="Seasonal Donuts" class="menu_img">
+                    <figcaption>Seasonal Donuts</figcaption>
+                </figure>
+            </div>
+
+            <a class="anchor" id="anchor_locations"></a>
+            <h2>Locations</h2>
+            <div class="flex bg_light" id="strip_locations">
+                <div class="location_txt">
+                    <h3>Downtown</h3>
+                    <br>
+                    <p>384 W 4th Street</p>
+                    <p>Portland, Maine</p>
+                    <br>
+                    <p>+1 855 333 5577</p>
+                </div>
+                <div class="location_txt">
+                    <h3>East Bayside</h3>
+                    <br>
+                    <p>3448 Fisherman Ave</p>
+                    <p>Portland, Maine</p>
+                    <br>
+                    <p>+1 877 444 3355</p>
+                </div>
+                <div class="location_txt">
+                    <h3>Oakdale</h3>
+                    <br>
+                    <p>555 Crescent Ave</p>
+                    <p>Portland, Maine</p>
+                    <br>
+                    <p>+1 888 555 4433</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="flex">
+            <a href="index.html" id="logo_txt_footer">The Cozy Teahouse</span>
+            <a href="mailto:contact@thecozyteahouse.com" id="email">contact@thecozyteahouse.com</a>
+            <br><br><br>
+            <span id="copyright">©2022 The Cozy Teahouse</span>
+        </footer>
+    </body>
+</html>
